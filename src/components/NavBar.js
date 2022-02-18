@@ -20,11 +20,12 @@ export default function NavBar() {
           </Nav>
 
           {currentUser
-            ? <Nav>
-              {/* <Navbar.Text>Signed in as {currentUser.email}, </Navbar.Text> */}
+            ?
+            <Nav>
               <Nav.Link onClick={logout} >Log Out</Nav.Link>
             </Nav>
-            : <Nav>
+            :
+            <Nav>
               <Nav.Item>
                 <Link className='nav-link' to="/signup">Sign Up</Link>
               </Nav.Item>

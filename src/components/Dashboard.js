@@ -25,9 +25,6 @@ export default function Dashboard() {
       })
   }
 
-  // if (!currentUser) {
-  //   return <Navigate to="/login" />
-  // } else {
   return (
     <div className='w-100' style={{ maxWidth: "400px" }}>
       <Toast show={showToast} onClose={() => setShowToast(false)} delay={3000} autohide>
@@ -50,5 +47,4 @@ export default function Dashboard() {
       </div>
     </div>
   )
-  // }
 }
